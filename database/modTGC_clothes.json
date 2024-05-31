@@ -1,0 +1,134 @@
+{
+    "tgc_black_combatshirt_top": {
+        "clone": "5d1f56f186f7744bcb0acd1a",
+        "customization": {
+            "_props": {
+                "Side": [
+                    "Bear",
+                    "Usec"
+                ],
+                "Prefab": {
+                    "path": "clothes/tshirt_usec_combatshirt_black.bundle"
+                }
+            }
+        },
+        "locales": {
+            "en": {
+                "Name": "tgc_black_combatshirt_top"
+            }
+        }
+    },
+    "tgc_black_combatshirt_hands": {
+        "clone": "5d1f5b3f86f7744bcd1345a2",
+        "customization": {
+            "_props": {
+                "Side": [
+                    "Bear",
+                    "Usec"
+                ],
+                "Prefab": {
+                    "path": "clothes/hands_usec_combatshirt_black.bundle"
+                }
+            }
+        },
+        "locales": {
+            "en": {
+                "Name": "tgc_black_combatshirt_hands"
+            }
+        }
+    },
+    "tgc_top_usec_hoody": {
+        "clone": "5e9da17386f774054b6f79a3",
+        "customization": {
+            "_props": {
+                "Side": [
+                    "Bear",
+                    "Usec"
+                ],
+                "Prefab": {
+                    "path": "clothes/top_usec_hoody.bundle"
+                }
+            }
+        },
+        "locales": {
+            "en": {
+                "Name": "tgc_black_combatshirt_top"
+            }
+        }
+    },
+    "tgc_m90_lower": {
+        "clone": "5d1f592286f7743f8362bcdb",
+        "customization": {
+            "_props": {
+                "Side": [
+                    "Bear",
+                    "Usec"
+                ],
+                "Prefab": {
+                    "path": "clothes/pants_m90.bundle"
+                }
+            }
+        },
+        "locales": {
+            "en": {
+                "Name": "tgc_m90_lower"
+            }
+        }
+    },
+    "tgc_black_combatshirt_suit": {
+        "clone": "5d1f623386f7744bcd135833",
+        "enable": true,
+        "customization": {
+            "_props": {
+                "Side": [
+                    "Bear",
+                    "Usec"
+                ],
+                "Body": "tgc_black_combatshirt_top",
+                "Hands": "tgc_black_combatshirt_hands"
+            }
+        },
+        "locales": {
+            "en": {
+                "Name": "TGC Dark Infiltrator"
+            }
+        }
+    },
+    "tgc_hoody_suit": {
+        "clone": "5e9dcb9c86f7743e20652f25",
+        "enable": true,
+        "customization": {
+            "_props": {
+                "Side": [
+                    "Bear",
+                    "Usec"
+                ],
+                "Body": "tgc_top_usec_hoody",
+                "Hands": "tgc_black_combatshirt_hands"
+            }
+        },
+        "locales": {
+            "en": {
+                "Name": "TGC Hoodie"
+            }
+        }
+    },
+    "tgc_m90_lower_suit": {
+        "clone": "5d1f648a86f7744bcd135841",
+        "enable": true,
+        "customization": {
+            "_props": {
+                "Side": [
+                    "Bear",
+                    "Usec"
+                ],
+                "Feet": "tgc_m90_lower"
+            }
+        },
+        "locales": {
+            "en": {
+                "Name": "TGC M90 Combat Pants"
+            }
+        }
+    }
+}
