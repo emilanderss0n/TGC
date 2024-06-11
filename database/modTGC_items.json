@@ -2382,8 +2382,8 @@
               "_name": "main",
               "_parent": "CCG_FIRST_AID",
               "_props": {
-                "cellsH": 8,
-                "cellsV": 6,
+                "cellsH": 6,
+                "cellsV": 4,
                 "filters": [
                   {
                     "ExcludedFilter": [],
@@ -3089,13 +3089,13 @@
     },
     "handbook": {
         "ParentId": "5b47574386f77428ca22b32f",
-        "Price": 13400
+        "Price": 17400
     },
     "locales": {
         "en": {
-            "Name": "SGE 400 protective mask",
-            "ShortName": "SGE400",
-            "Description": "SGE 400 Protective Mask (The choice of US Law Enforcement). This new full face piece mask, incorporates significant innovations: the use of a transparent poly-carbonate visor, that is also a support structure for all the other components and an extremely ergonomic facial gasket for optimal wearer comfort."
+            "Name": "Scott FM3 protective mask",
+            "ShortName": "FM3",
+            "Description": "Approved to EN 136 Class 3, the highest standard for safety."
         }
     }
   },
@@ -3117,7 +3117,7 @@
     },
     "handbook": {
         "ParentId": "5b47574386f77428ca22b32f",
-        "Price": 13400
+        "Price": 15400
     },
     "locales": {
         "en": {
@@ -3279,7 +3279,7 @@
   },
   "CCG_M16_18_BARREL": {
     "enable": true,
-    "clone": "5d440b9fa4b93601354d480c",
+    "clone": "55d3632e4bdc2d972f8b4569",
     "item": {
         "_id": "CCG_M16_18_BARREL",
         "_name": "CCG_M16_18_BARREL",
@@ -3364,6 +3364,24 @@
             "_required": true,
             "_mergeSlotWithChildren": false,
             "_proto": "55d30c4c4bdc2db4468b457e"
+          },
+          {
+            "_name": "mod_launcher",
+            "_id": "6357cd4b6bd1f226843c249f",
+            "_parent": "55d3632e4bdc2d972f8b4569",
+            "_props": {
+              "filters": [
+                {
+                  "Shift": 0,
+                  "Filter": [
+                    "6357c98711fb55120211f7e1"
+                  ]
+                }
+              ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
           }
           ],
           "Prefab": {
@@ -3386,7 +3404,7 @@
   },
   "CCG_M16_20_BARREL": {
     "enable": true,
-    "clone": "CCG_M16_18_BARREL",
+    "clone": "55d3632e4bdc2d972f8b4569",
     "item": {
         "_id": "CCG_M16_20_BARREL",
         "_name": "CCG_M16_20_BARREL",
@@ -3469,6 +3487,24 @@
             ]
             },
             "_required": true,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+          },
+          {
+            "_name": "mod_launcher",
+            "_id": "6357cd4b6bd1f226843c249f",
+            "_parent": "55d3632e4bdc2d972f8b4569",
+            "_props": {
+              "filters": [
+                {
+                  "Shift": 0,
+                  "Filter": [
+                    "6357c98711fb55120211f7e1"
+                  ]
+                }
+              ]
+            },
+            "_required": false,
             "_mergeSlotWithChildren": false,
             "_proto": "55d30c4c4bdc2db4468b457e"
           }
@@ -4204,6 +4240,223 @@
             "Name": "BOPE Beret",
             "ShortName": "BOPE",
             "Description": "What is a Brazilian police beret doing here in Russia?"
+        }
+    }
+  },
+  "CCG_M16_HEATSINK_HANDGUARD": {
+    "enable": true,
+    "clone": "5d00e0cbd7ad1a6c6566a42d",
+    "item": {
+        "_id": "CCG_M16_HEATSINK_HANDGUARD",
+        "_name": "CCG_M16_HEATSINK_HANDGUARD",
+        "_props": {
+          "Name": "",
+          "ShortName": "",
+          "Description": "",
+          "Prefab": {
+            "path": "m16_heatshield_handguard.bundle",
+            "rcid": ""
+          }
+        }
+    },
+    "handbook": {
+        "ParentId": "5b5f75e486f77447ec5d7712",
+        "Price": 17000
+    },
+    "locales": {
+        "en": {
+            "Name": "AR-15 M16 M203 heat shield handguard",
+            "ShortName": "M203",
+            "Description": "Heat shield handguard for M16A4 and M4A1 with M203 grenade launcher."
+        }
+    }
+  },
+  "CCG_GHOST_MASK": {
+    "enable": true,
+    "clone": "5b432b2f5acfc4771e1c6622",
+    "item": {
+      "_id": "CCG_GHOST_MASK",
+      "_name": "CCG_GHOST_MASK",
+      "_props": {
+        "Name": "",
+        "ShortName": "",
+        "Description": "",
+        "Prefab": {
+          "path": "ghost_mask.bundle",
+          "rcid": ""
+        },
+        "BlocksEyewear": true,
+        "BlocksHeadwear": false,
+        "BackgroundColor": "yellow",
+        "armorClass": "3",
+        "RepairCost": 1200,
+        "ArmorMaterial": "UHMWPE",
+        "BluntThroughput": 0.119,
+        "Weight": 0.52,
+        "Durability": 45,
+        "MaxDurability": 45
+      }
+    },
+    "handbook": {
+        "ParentId": "5b47574386f77428ca22b32f",
+        "Price": 120000
+    },
+    "locales": {
+        "en": {
+            "Name": "Ghost facecover",
+            "ShortName": "Ghost",
+            "Description": "This ghost mask is made from soft cotton stretch fabric that is moisture-wicking, windproof, sweat-wicking, and UV resistant."
+        }
+    }
+  },
+  "CCG_MP7_STOCK_1": {
+    "enable": true,
+    "clone": "5bcf0213d4351e0085327c17",
+    "item": {
+        "_id": "CCG_MP7_STOCK_1",
+        "_name": "CCG_MP7_STOCK_1",
+        "_props": {
+          "Description": "",
+          "Name": "",
+          "ShortName": "",
+          "Prefab": {
+            "path": "mp7_stock_1.bundle",
+            "rcid": ""
+          },
+          "Ergonomics": 5,
+          "Recoil": -14,
+          "IsAnimated": false,
+          "SizeReduceRight": 0,
+          "RaidModdable": true,
+          "Foldable": false,
+          "Retractable": false
+        }
+    },
+    "handbook": {
+        "ParentId": "5b5f757486f774093e6cb507",
+        "Price": 4300
+    },
+    "locales": {
+        "en": {
+            "Name": "HK MP7 TGC stock",
+            "ShortName": "TGC",
+            "Description": "The TGC branded MP7 stock offers increased stability and ergonomics."
+        }
+    }
+  },
+  "CCG_MP7_STOCK_2": {
+    "enable": true,
+    "clone": "5bcf0213d4351e0085327c17",
+    "item": {
+        "_id": "CCG_MP7_STOCK_2",
+        "_name": "CCG_MP7_STOCK_2",
+        "_props": {
+          "Description": "",
+          "Name": "",
+          "ShortName": "",
+          "Prefab": {
+            "path": "mp7_stock_2.bundle",
+            "rcid": ""
+          },
+          "Ergonomics": 2,
+          "Recoil": -2,
+          "IsAnimated": false,
+          "SizeReduceRight": 0,
+          "RaidModdable": true,
+          "Foldable": false,
+          "Retractable": false,
+          "Slots": [
+            {
+              "_name": "mod_stock_000",
+              "_id": "5c793fb92e221644f31bfb66",
+              "_parent": "5c793fb92e221644f31bfb64",
+              "_props": {
+                "filters": [
+                  {
+                    "Shift": 0,
+                    "Filter": [
+                      "5fc2369685fd526b824a5713",
+                      "606587d11246154cad35d635",
+                      "602e620f9b513876d4338d9a",
+                      "5a9eb32da2750c00171b3f9c",
+                      "5bfe86df0db834001b734685",
+                      "55d4ae6c4bdc2d8b2f8b456e",
+                      "5c87a07c2e2216001219d4a2",
+                      "5bb20e70d4351e0035629f8f",
+                      "5beec8c20db834001d2c465c",
+                      "5fbbaa86f9986c4cff3fe5f6",
+                      "5fce16961f152d4312622bc9",
+                      "5ae30c9a5acfc408fb139a03",
+                      "5d135e83d7ad1a21b83f42d8",
+                      "5d135ecbd7ad1a21c176542e",
+                      "56eabf3bd2720b75698b4569",
+                      "58d2946386f774496974c37e",
+                      "58d2946c86f7744e271174b5",
+                      "58d2947686f774485c6a1ee5",
+                      "58d2947e86f77447aa070d53",
+                      "5d44069ca4b9361ebd26fc37",
+                      "5d4406a8a4b9361e4f6eb8b7",
+                      "5947c73886f7747701588af5",
+                      "5c793fde2e221601da358614",
+                      "5b39f8db5acfc40016387a1b",
+                      "628a85ee6b1d481ff772e9d5",
+                      "6516e91f609aaf354b34b3e2",
+                      "6516e971a3d4c6497930b450",
+                      "6529370c405a5f51dd023db8",
+                      "CCG_MAGPUL_SL",
+                      "CCG_MAGPUL_SL_FDE",
+                      "CCG_ZIPLINE_AR15_STOCK"
+                    ]
+                  }
+                ]
+              },
+              "_required": false,
+              "_mergeSlotWithChildren": false,
+              "_proto": "55d30c4c4bdc2db4468b457e"
+            }
+          ]
+        }
+    },
+    "handbook": {
+        "ParentId": "5b5f757486f774093e6cb507",
+        "Price": 15300
+    },
+    "locales": {
+        "en": {
+            "Name": "HK MP7 TGC stock buffer tube",
+            "ShortName": "TGC",
+            "Description": "The TGC branded MP7 stock enables you to mount AR style stocks on your MP7."
+        }
+    }
+  },
+  "CCG_MP7_SILENCER_1": {
+    "enable": true,
+    "clone": "5ba26ae8d4351e00367f9bdb",
+    "item": {
+        "_id": "CCG_MP7_SILENCER_1",
+        "_name": "CCG_MP7_SILENCER_1",
+        "_props": {
+          "Ergonomics": -12,
+          "Recoil": -21,
+          "Weight": 0.422,
+          "Description": "",
+          "Name": "",
+          "ShortName": "",
+          "Prefab": {
+            "path": "mp7_silencer_1.bundle",
+            "rcid": ""
+          }
+        }
+    },
+    "handbook": {
+        "ParentId": "5b5f731a86f774093e6cb4f9",
+        "Price": 40000
+    },
+    "locales": {
+        "en": {
+            "Name": "HK MP7 TGC Stelio 4.6x30 sound suppressor",
+            "ShortName": "Stelio 4.6",
+            "Description": "Stelio is a 4.6x30 mm suppressor produced by Painter (TGC)."
         }
     }
   }

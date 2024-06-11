@@ -1446,6 +1446,51 @@
 			"upd": {
 				"StackObjectsCount": 1
 			}
+		},
+		{
+			"_id": "CCG_M16_HEATSINK_HANDGUARD",
+			"_tpl": "CCG_M16_HEATSINK_HANDGUARD",
+			"parentId": "hideout",
+			"slotId": "hideout",
+			"upd": {
+				"StackObjectsCount": 4
+			}
+		},
+		{
+			"_id": "CCG_GHOST_MASK",
+			"_tpl": "CCG_GHOST_MASK",
+			"parentId": "hideout",
+			"slotId": "hideout",
+			"upd": {
+				"StackObjectsCount": 1
+			}
+		},
+		{
+			"_id": "CCG_MP7_STOCK_1",
+			"_tpl": "CCG_MP7_STOCK_1",
+			"parentId": "hideout",
+			"slotId": "hideout",
+			"upd": {
+				"StackObjectsCount": 4
+			}
+		},
+		{
+			"_id": "CCG_MP7_STOCK_2",
+			"_tpl": "CCG_MP7_STOCK_2",
+			"parentId": "hideout",
+			"slotId": "hideout",
+			"upd": {
+				"StackObjectsCount": 3
+			}
+		},
+		{
+			"_id": "CCG_MP7_SILENCER_1",
+			"_tpl": "CCG_MP7_SILENCER_1",
+			"parentId": "hideout",
+			"slotId": "hideout",
+			"upd": {
+				"StackObjectsCount": 2
+			}
 		}
 	],
 	"barter_scheme": {
@@ -1932,7 +1977,7 @@
 		"CCG_GAS_MASK_SGE400": [
 			[
 				{
-					"count": 12400,
+					"count": 17400,
 					"_tpl": "5449016a4bdc2d6f028b456f"
 				}
 			]
@@ -1940,7 +1985,7 @@
 		"CCG_GAS_MASK_GP9": [
 			[
 				{
-					"count": 12400,
+					"count": 14400,
 					"_tpl": "5449016a4bdc2d6f028b456f"
 				}
 			]
@@ -2168,6 +2213,46 @@
 					"_tpl": "5449016a4bdc2d6f028b456f"
 				}
 			]
+		],
+		"CCG_M16_HEATSINK_HANDGUARD": [
+			[
+				{
+					"count": 17000,
+					"_tpl": "5449016a4bdc2d6f028b456f"
+				}
+			]
+		],
+		"CCG_GHOST_MASK": [
+			[
+				{
+					"count": 120000,
+					"_tpl": "5449016a4bdc2d6f028b456f"
+				}
+			]
+		],
+		"CCG_MP7_STOCK_1": [
+			[
+				{
+					"count": 4300,
+					"_tpl": "5449016a4bdc2d6f028b456f"
+				}
+			]
+		],
+		"CCG_MP7_STOCK_2": [
+			[
+				{
+					"count": 15300,
+					"_tpl": "5449016a4bdc2d6f028b456f"
+				}
+			]
+		],
+		"CCG_MP7_SILENCER_1": [
+			[
+				{
+					"count": 40000,
+					"_tpl": "5449016a4bdc2d6f028b456f"
+				}
+			]
 		]
 	},
 	"loyal_level_items": {
@@ -2260,6 +2345,11 @@
 		"CCG_BELT_3_BLACK": 4,
 		"CCG_FLASHLIGHT_SUREFIRE_2": 2,
 		"CCG_RISER_FOUR": 2,
-		"CCG_BOPE_BERET": 1
+		"CCG_BOPE_BERET": 1,
+		"CCG_M16_HEATSINK_HANDGUARD": 3,
+		"CCG_GHOST_MASK": 4,
+		"CCG_MP7_STOCK_1": 3,
+		"CCG_MP7_STOCK_2": 3,
+		"CCG_MP7_SILENCER_1": 3
 	}
 }
