@@ -1491,6 +1491,93 @@
 			"upd": {
 				"StackObjectsCount": 2
 			}
+		},
+		{
+			"_id": "CCG_MP7_MAGAZINE_1",
+			"_tpl": "CCG_MP7_MAGAZINE_1",
+			"parentId": "hideout",
+			"slotId": "hideout",
+			"upd": {
+				"StackObjectsCount": 4
+			}
+		},
+		{
+			"_id": "CCG_CGPC3_VEST_PRESET",
+			"_tpl": "CCG_CGPC3_VEST",
+			"parentId": "hideout",
+			"slotId": "hideout",
+			"upd": {
+				"StackObjectsCount": 4
+			}
+		},
+        {
+			"_id": "CCG_CGPC3_VEST_P0",
+			"_tpl": "6570e83223c1f638ef0b0ede",
+			"parentId": "CCG_CGPC3_VEST_PRESET",
+			"slotId": "Soft_armor_front"
+		},
+		{
+			"_id": "CCG_CGPC3_VEST_P1",
+			"_tpl": "6570e87c23c1f638ef0b0ee2",
+			"parentId": "CCG_CGPC3_VEST_PRESET",
+			"slotId": "Soft_armor_back"
+		},
+		{
+			"_id": "CCG_CGPC3_VEST_P2",
+			"_tpl": "6570e90b3a5689d85f08db97",
+			"parentId": "CCG_CGPC3_VEST_PRESET",
+			"slotId": "Groin"
+		},
+		{
+			"_id": "CCG_CGPC3_VEST_P3",
+			"_tpl": "656f9fa0498d1b7e3e071d98",
+			"parentId": "CCG_CGPC3_VEST_PRESET",
+			"slotId": "Front_plate"
+		},
+		{
+			"_id": "CCG_CGPC3_VEST_P4",
+			"_tpl": "656f9fa0498d1b7e3e071d98",
+			"parentId": "CCG_CGPC3_VEST_PRESET",
+			"slotId": "Back_plate"
+		},
+		{
+			"_id": "CCG_VEST_CGPC_TAN_PRESET",
+			"_tpl": "CCG_VEST_CGPC_TAN",
+			"parentId": "hideout",
+			"slotId": "hideout",
+			"upd": {
+				"StackObjectsCount": 3
+			}
+		},
+        {
+			"_id": "CCG_VEST_CGPC_TAN_P0",
+			"_tpl": "6570e83223c1f638ef0b0ede",
+			"parentId": "CCG_VEST_CGPC_TAN_PRESET",
+			"slotId": "Soft_armor_front"
+		},
+		{
+			"_id": "CCG_VEST_CGPC_TAN_P1",
+			"_tpl": "6570e87c23c1f638ef0b0ee2",
+			"parentId": "CCG_VEST_CGPC_TAN_PRESET",
+			"slotId": "Soft_armor_back"
+		},
+		{
+			"_id": "CCG_VEST_CGPC_TAN_P2",
+			"_tpl": "6570e90b3a5689d85f08db97",
+			"parentId": "CCG_VEST_CGPC_TAN_PRESET",
+			"slotId": "Groin"
+		},
+		{
+			"_id": "CCG_VEST_CGPC_TAN_P3",
+			"_tpl": "656f9fa0498d1b7e3e071d98",
+			"parentId": "CCG_VEST_CGPC_TAN_PRESET",
+			"slotId": "Front_plate"
+		},
+		{
+			"_id": "CCG_VEST_CGPC_TAN_P4",
+			"_tpl": "656f9fa0498d1b7e3e071d98",
+			"parentId": "CCG_VEST_CGPC_TAN_PRESET",
+			"slotId": "Back_plate"
 		}
 	],
 	"barter_scheme": {
@@ -2253,6 +2340,30 @@
 					"_tpl": "5449016a4bdc2d6f028b456f"
 				}
 			]
+		],
+		"CCG_MP7_MAGAZINE_1": [
+			[
+				{
+					"count": 21000,
+					"_tpl": "5449016a4bdc2d6f028b456f"
+				}
+			]
+		],
+		"CCG_CGPC3_VEST_PRESET": [
+			[
+				{
+					"count": 229000,
+					"_tpl": "5449016a4bdc2d6f028b456f"
+				}
+			]
+		],
+		"CCG_VEST_CGPC_TAN_PRESET": [
+			[
+				{
+					"count": 229000,
+					"_tpl": "5449016a4bdc2d6f028b456f"
+				}
+			]
 		]
 	},
 	"loyal_level_items": {
@@ -2350,6 +2461,9 @@
 		"CCG_GHOST_MASK": 4,
 		"CCG_MP7_STOCK_1": 3,
 		"CCG_MP7_STOCK_2": 3,
-		"CCG_MP7_SILENCER_1": 3
+		"CCG_MP7_SILENCER_1": 3,
+		"CCG_MP7_MAGAZINE_1": 3,
+		"CCG_CGPC3_VEST_PRESET": 4,
+		"CCG_VEST_CGPC_TAN_PRESET": 4
 	}
 }

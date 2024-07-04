@@ -1540,10 +1540,10 @@
             },
             "Cartridges": [
               {
-                "_id": "5aaa5dfee5b5b000140293d5",
+                "_id": "CCG_DD_MAGAZINE_556_cartridges",
                 "_max_count": 32,
                 "_name": "cartridges",
-                "_parent": "5aaa5dfee5b5b000140293d3",
+                "_parent": "CCG_DD_MAGAZINE_556",
                 "_props": {
                   "filters": [
                     {
@@ -2552,6 +2552,26 @@
             "_proto": "55d30c4c4bdc2db4468b457e"
           },
           {
+            "_name": "mod_equipment_002",
+            "_id": "CCG_MODX_2_HELMET_M90_slaap",
+            "_parent": "CCG_MODX_2_HELMET_M90",
+            "_props": {
+              "filters": [
+                {
+                  "Shift": 0,
+                  "Filter": [
+                    "5c0e66e2d174af02a96252f4",
+                    "4D4341544C4153474541520B",
+                    "01021_SLAAP_ARMOR"
+                  ]
+                }
+              ]
+            },
+            "_required": false,
+            "_mergeSlotWithChildren": false,
+            "_proto": "55d30c4c4bdc2db4468b457e"
+          },
+          {
             "_id": "CCG_MODX_2_HELMET_M90_nvg",
             "_mergeSlotWithChildren": true,
             "_name": "mod_nvg",
@@ -2757,9 +2777,7 @@
           "Prefab": {
             "path": "vertgrip2_blk.bundle",
             "rcid": ""
-          },
-          "Ergonomics": 7,
-          "Recoil": -4
+          }
         }
     },
     "handbook": {
@@ -3758,8 +3776,8 @@
               "path": "m16_stock.bundle",
               "rcid": ""
             },
-            "Ergonomics": 10,
-            "Recoil": -32
+            "Ergonomics": 6,
+            "Recoil": -23
           }
       },
       "handbook": {
@@ -4358,8 +4376,8 @@
             "path": "mp7_stock_2.bundle",
             "rcid": ""
           },
-          "Ergonomics": 2,
-          "Recoil": -2,
+          "Ergonomics": 1,
+          "Recoil": -1,
           "IsAnimated": false,
           "SizeReduceRight": 0,
           "RaidModdable": true,
@@ -4436,9 +4454,9 @@
         "_id": "CCG_MP7_SILENCER_1",
         "_name": "CCG_MP7_SILENCER_1",
         "_props": {
-          "Ergonomics": -12,
-          "Recoil": -21,
-          "Weight": 0.422,
+          "Ergonomics": -20,
+          "Recoil": -7,
+          "Weight": 0.51,
           "Description": "",
           "Name": "",
           "ShortName": "",
@@ -4457,6 +4475,151 @@
             "Name": "HK MP7 TGC Stelio 4.6x30 sound suppressor",
             "ShortName": "Stelio 4.6",
             "Description": "Stelio is a 4.6x30 mm suppressor produced by Painter (TGC)."
+        }
+    }
+  },
+  "CCG_MP7_SILENCER_1_SPEC": {
+    "enable": true,
+    "clone": "CCG_MP7_SILENCER_1",
+    "item": {
+        "_id": "CCG_MP7_SILENCER_1_SPEC",
+        "_name": "CCG_MP7_SILENCER_1_SPEC",
+        "_props": {
+          "Description": "",
+          "Name": "",
+          "ShortName": "",
+          "Weight": 0.462,
+          "Prefab": {
+            "path": "mp7_silencer_1_spec.bundle",
+            "rcid": ""
+          }
+        }
+    },
+    "handbook": {
+        "ParentId": "5b5f731a86f774093e6cb4f9",
+        "Price": 44000
+    },
+    "locales": {
+        "en": {
+            "Name": "HK MP7 TGC Stelio S 4.6x30 sound suppressor",
+            "ShortName": "Stelio 4.6",
+            "Description": "Stelio is a 4.6x30 mm suppressor produced by Painter (TGC)."
+        }
+    }
+  },
+  "CCG_MP7_MAGAZINE_1": {
+    "enable": true,
+    "clone": "5ba26586d4351e44f824b340",
+    "item": {
+        "_id": "CCG_MP7_MAGAZINE_1",
+        "_name": "CCG_MP7_MAGAZINE_1",
+        "_props": {
+          "Name": "",
+          "ShortName": "",
+          "Description": "",
+          "Prefab": {
+            "path": "mp7_magazine_1.bundle",
+            "rcid": ""
+          },
+          "VisibleAmmoRangesString": "1-4",
+          "Ergonomics": -8,
+          "Cartridges": [
+            {
+              "_name": "cartridges",
+              "_id": "CCG_MP7_MAGAZINE_1_cartridges",
+              "_parent": "CCG_MP7_MAGAZINE_1",
+              "_max_count": 60,
+              "_props": {
+                "filters": [
+                  {
+                    "Filter": [
+                      "5ba26812d4351e003201fef1",
+                      "5ba26835d4351e0035628ff5",
+                      "5ba2678ad4351e44f824b344",
+                      "5ba26844d4351e00334c9475",
+                      "64b6979341772715af0f9c39"
+                    ]
+                  }
+                ]
+              },
+              "_proto": "5748538b2459770af276a261"
+            }
+          ]
+        }
+    },
+    "handbook": {
+        "ParentId": "5b5f754a86f774094242f19b",
+        "Price": 22000
+    },
+    "locales": {
+        "en": {
+            "Name": "HK MP7 4.6x30 60-round magazine",
+            "ShortName": "MP7 60",
+            "Description": "60-round 4.6x30 magazine for MP7."
+        }
+    }
+  },
+  "CCG_CGPC3_VEST": {
+    "enable": true,
+    "clone": "544a5caa4bdc2d1a388b4568",
+    "item": {
+        "_id": "CCG_CGPC3_VEST",
+        "_name": "CCG_CGPC3_VEST",
+        "_props": {
+          "Name": "",
+          "ShortName": "",
+          "Description": "",
+          "Width": 3,
+          "Height": 4,
+          "Prefab": {
+            "path": "assaultvest6.bundle",
+            "rcid": ""
+          },
+          "CanSellOnRagfair": false,
+          "CanRequireOnRagfair": false
+        }
+    },
+    "handbook": {
+        "ParentId": "5b5f6f8786f77447ed563642",
+        "Price": 229000
+    },
+    "locales": {
+        "en": {
+            "Name": "CGPC3 TQS (Green)",
+            "ShortName": "CGPC3",
+            "Description": "A low-profile, lightweight and fully modular plate carrier made in the Czech Republic. With its sturdy construction and advanced materials, it offers reliable defense against ballistic threats and fragmentation, while its Tube Quick System allows for comfortable and silent unfastening."
+        }
+    }
+  },
+  "CCG_VEST_CGPC_TAN": {
+    "enable": true,
+    "clone": "544a5caa4bdc2d1a388b4568",
+    "item": {
+        "_id": "CCG_VEST_CGPC_TAN",
+        "_name": "CCG_VEST_CGPC_TAN",
+        "_props": {
+          "Name": "",
+          "ShortName": "",
+          "Description": "",
+          "Width": 3,
+          "Height": 4,
+          "Prefab": {
+            "path": "assaultvest6_tan.bundle",
+            "rcid": ""
+          },
+          "CanSellOnRagfair": false,
+          "CanRequireOnRagfair": false
+        }
+    },
+    "handbook": {
+        "ParentId": "5b5f6f8786f77447ed563642",
+        "Price": 229000
+    },
+    "locales": {
+        "en": {
+            "Name": "CGPC3 TQS (Tan)",
+            "ShortName": "CGPC3",
+            "Description": "A low-profile, lightweight and fully modular plate carrier made in the Czech Republic. With its sturdy construction and advanced materials, it offers reliable defense against ballistic threats and fragmentation, while its Tube Quick System allows for comfortable and silent unfastening."
         }
     }
   }

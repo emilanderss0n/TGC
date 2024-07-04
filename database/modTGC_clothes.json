@@ -130,5 +130,62 @@
                 "Name": "TGC M90 Combat Pants"
             }
         }
+    },
+    "tgc_m90_top": {
+        "clone": "5fce3e47fe40296c1d5fd784",
+        "customization": {
+            "_props": {
+                "Side": [
+                    "Bear",
+                    "Usec"
+                ],
+                "Prefab": {
+                    "path": "clothes/top_bear_borey_m90.bundle"
+                }
+            }
+        },
+        "locales": {
+            "en": {
+                "Name": "tgc_m90_top"
+            }
+        }
+    },
+    "tgc_m90_top_hands": {
+        "clone": "5fd760001189a17bcc172b85",
+        "customization": {
+            "_props": {
+                "Side": [
+                    "Bear",
+                    "Usec"
+                ],
+                "Prefab": {
+                    "path": "clothes/hands_bear_borey_m90.skin.bundle"
+                }
+            }
+        },
+        "locales": {
+            "en": {
+                "Name": "tgc_m90_top_hands"
+            }
+        }
+    },
+    "tgc_m90_top_suit": {
+        "clone": "5fd3e7e2dd870108a754b230",
+        "enable": true,
+        "customization": {
+            "_props": {
+                "Side": [
+                    "Bear",
+                    "Usec"
+                ],
+                "Body": "tgc_m90_top",
+                "Hands": "tgc_m90_top_hands"
+            }
+        },
+        "locales": {
+            "en": {
+                "Name": "TGC M90 Combat Jacket"
+            }
+        }
     }
 }
