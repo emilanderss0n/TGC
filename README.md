@@ -5,14 +5,18 @@ Tactical Gear Component (TGC) will become a big mod for new gear, attachments, a
 
 ![alt text](https://i.imgur.com/QqvzjTF.jpg)
 
+---------------
+
 How you install this mod:
 
-Download Painter, BlackCore and MagTape.
-Drag each folder in each zip file into user/mods.
-Download Tactical Gear Component.
-Drag the folder in the zip file into user/mods.
-Done. Now you have to do Painters quests to unlock everything.
+- Download Painter
+- Drag each folder in each zip file into user/mods.
+- Download Tactical Gear Component.
+- Drag the folder in the zip file into user/mods.
+- Done. Now you have to do Painters quests to unlock everything.
 
 If you use custom load order for other mods, you have to make sure Painter is loading before my other mods. If you're not using order.json then you can disregard this message.
+
+---------------
 
 SPT HUB Link: https://hub.sp-tarkov.com/files/file/1555-tactical-gear-component
