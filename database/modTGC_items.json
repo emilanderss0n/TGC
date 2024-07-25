@@ -27,6 +27,34 @@
             }
         }
     },
+    "CCG_WILCOX_TACTICAL_BLK": {
+      "enable": true,
+      "clone": "CCG_WILCOX_TACTICAL",
+      "item": {
+        "_id": "CCG_WILCOX_TACTICAL_BLK",
+        "_name": "CCG_WILCOX_TACTICAL_BLK",
+        "_props": {
+          "Name": "",
+          "ShortName": "",
+          "Description": "",
+          "Prefab": {
+            "path": "wilcox_tactical_blk.bundle",
+            "rcid": ""
+          }
+        }
+      },
+      "handbook": {
+          "ParentId": "5b5f737886f774093e6cb4fb",
+          "Price": 21223
+      },
+      "locales": {
+          "en": {
+              "Name": "Wilcox tactical device (Black)",
+              "ShortName": "Wilcox",
+              "Description": "Compact laser and flashlight device for mounting on picatinny rails."
+          }
+      }
+  },
     "CCG_FTX_TACTICAL": {
         "enable": true,
         "clone": "544909bb4bdc2d6f028b4577",
@@ -1524,11 +1552,11 @@
           }
       }
     },
-    "CCG_DD_MAGAZINE_556": {
+    "668aaacf43ef066dcbaa6a05": {
       "enable": true,
       "clone": "5aaa5dfee5b5b000140293d3",
       "item": {
-          "_id": "CCG_DD_MAGAZINE_556",
+          "_id": "668aaacf43ef066dcbaa6a05",
           "_name": "CCG_DD_MAGAZINE_556",
           "_props": {
             "Name": "",
@@ -1540,10 +1568,10 @@
             },
             "Cartridges": [
               {
-                "_id": "CCG_DD_MAGAZINE_556_cartridges",
+                "_id": "668aaadce0c27026094afbc3",
                 "_max_count": 32,
                 "_name": "cartridges",
-                "_parent": "CCG_DD_MAGAZINE_556",
+                "_parent": "668aaacf43ef066dcbaa6a05",
                 "_props": {
                   "filters": [
                     {
@@ -1563,7 +1591,8 @@
                         "5fd20ff893a8961fc660a954",
                         "619636be6db0f2477964e710",
                         "6196364158ef8c428c287d9f",
-                        "6196365d58ef8c428c287da1"
+                        "6196365d58ef8c428c287da1",
+                        "6695008f0e58c72c3a50b67f"
                       ]
                     }
                   ]
@@ -2211,6 +2240,7 @@
   },
   "CCG_AMMO_POUCH": {
     "enable": true,
+    "putInSecureContainer": true,
     "clone": "5aafbde786f774389d0cbc0f",
     "item": {
         "_id": "CCG_AMMO_POUCH",
@@ -2364,6 +2394,7 @@
   },
   "CCG_FIRST_AID": {
     "enable": true,
+    "putInSecureContainer": true,
     "clone": "5d235bb686f77443f4331278",
     "item": {
         "_id": "CCG_FIRST_AID",
@@ -2479,11 +2510,11 @@
         }
     }
   },
-  "CCG_TRANSPARENT_MAG_556": {
+  "668aaaeb9af267a137cc379b": {
     "enable": true,
     "clone": "5aaa5dfee5b5b000140293d3",
     "item": {
-        "_id": "CCG_TRANSPARENT_MAG_556",
+        "_id": "668aaaeb9af267a137cc379b",
         "_name": "CCG_TRANSPARENT_MAG_556",
         "_props": {
           "Name": "",
@@ -2493,7 +2524,41 @@
           "Prefab": {
             "path": "trans_mag.bundle",
             "rcid": ""
-          }
+          },
+          "Cartridges": [
+            {
+              "_id": "668aaadce0c27026094afbc3",
+              "_max_count": 32,
+              "_name": "cartridges",
+              "_parent": "668aaacf43ef066dcbaa6a05",
+              "_props": {
+                "filters": [
+                  {
+                    "Filter": [
+                      "59e6920f86f77411d82aa167",
+                      "59e6927d86f77411da468256",
+                      "54527a984bdc2d4e668b4567",
+                      "54527ac44bdc2d36668b4567",
+                      "59e68f6f86f7746c9f75e846",
+                      "59e6906286f7746c9f75e847",
+                      "59e690b686f7746c9f75e848",
+                      "59e6918f86f7746c9f75e849",
+                      "60194943740c5d77f6705eea",
+                      "601949593ae8f707c4608daa",
+                      "5c0d5ae286f7741e46554302",
+                      "5fbe3ffdf8b6a877a729ea82",
+                      "5fd20ff893a8961fc660a954",
+                      "619636be6db0f2477964e710",
+                      "6196364158ef8c428c287d9f",
+                      "6196365d58ef8c428c287da1",
+                      "6695008f0e58c72c3a50b67f"
+                    ]
+                  }
+                ]
+              },
+              "_proto": "5748538b2459770af276a261"
+            }
+          ]
         }
     },
     "handbook": {
@@ -3231,7 +3296,7 @@
   },
   "CCG_M16_HANDGUARD": {
     "enable": true,
-    "clone": "5c9a26332e2216001219ea70",
+    "clone": "5d00ef6dd7ad1a0940739b16",
     "item": {
         "_id": "CCG_M16_HANDGUARD",
         "_name": "CCG_M16_HANDGUARD",
@@ -3265,6 +3330,21 @@
             "ShortName": "DDM16",
             "Description": "Daniel Defense MFR 14.0 M-LOK rail, which comes from the DDM4V7 PRO edition. Length of 14\", it has everything you need on the battlefield."
         }
+    },
+    "addToExistingItemFilters": {
+      "mod_handguard": [
+        "59bfe68886f7746004266202",
+        "63f5ed14534b2c3d5479a677",
+        "5d4405aaa4b9361e6a4e6bd3",
+        "5c07a8770db8340023300450",
+        "55d355e64bdc2d962f8b4569"
+      ]
+    },
+    "addToThisItemsFilters": {
+      "mod_foregrip": [
+        "CCG_BCM_MOD_REVERSED",
+        "CCG_BCM_MOD_REVERSED_TAPE"
+      ]
     }
   },
   "CCG_M16_HANDGUARD_BLK": {
@@ -3293,6 +3373,21 @@
             "ShortName": "DDM16",
             "Description": "Daniel Defense MFR 14.0 M-LOK rail, which comes from the DDM4V7 PRO edition. Length of 14\", it has everything you need on the battlefield."
         }
+    },
+    "addToExistingItemFilters": {
+      "mod_handguard": [
+        "59bfe68886f7746004266202",
+        "63f5ed14534b2c3d5479a677",
+        "5d4405aaa4b9361e6a4e6bd3",
+        "5c07a8770db8340023300450",
+        "55d355e64bdc2d962f8b4569"
+      ]
+    },
+    "addToThisItemsFilters": {
+      "mod_foregrip": [
+        "CCG_BCM_MOD_REVERSED",
+        "CCG_BCM_MOD_REVERSED_TAPE"
+      ]
     }
   },
   "CCG_M16_18_BARREL": {
@@ -3607,11 +3702,11 @@
         }
     }
   },
-  "CCG_AR_MAGAZINE": {
+  "668aaafccf8a12926ca6ccf9": {
     "enable": true,
     "clone": "5aaa5dfee5b5b000140293d3",
     "item": {
-        "_id": "CCG_AR_MAGAZINE",
+        "_id": "668aaafccf8a12926ca6ccf9",
         "_name": "CCG_AR_MAGAZINE",
         "_props": {
           "Name": "",
@@ -3620,7 +3715,42 @@
           "Prefab": {
             "path": "ar_magazine.bundle",
             "rcid": ""
-          }
+          },
+          "Ergonomics": -2,
+          "Cartridges": [
+            {
+              "_id": "668aaadce0c27026094afbc3",
+              "_max_count": 30,
+              "_name": "cartridges",
+              "_parent": "668aaacf43ef066dcbaa6a05",
+              "_props": {
+                "filters": [
+                  {
+                    "Filter": [
+                      "59e6920f86f77411d82aa167",
+                      "59e6927d86f77411da468256",
+                      "54527a984bdc2d4e668b4567",
+                      "54527ac44bdc2d36668b4567",
+                      "59e68f6f86f7746c9f75e846",
+                      "59e6906286f7746c9f75e847",
+                      "59e690b686f7746c9f75e848",
+                      "59e6918f86f7746c9f75e849",
+                      "60194943740c5d77f6705eea",
+                      "601949593ae8f707c4608daa",
+                      "5c0d5ae286f7741e46554302",
+                      "5fbe3ffdf8b6a877a729ea82",
+                      "5fd20ff893a8961fc660a954",
+                      "619636be6db0f2477964e710",
+                      "6196364158ef8c428c287d9f",
+                      "6196365d58ef8c428c287da1",
+                      "6695008f0e58c72c3a50b67f"
+                    ]
+                  }
+                ]
+              },
+              "_proto": "5748538b2459770af276a261"
+            }
+          ]
         }
     },
     "handbook": {
@@ -3939,6 +4069,14 @@
             "ShortName": "MLOK 2.8\"",
             "Description": "Low profile M-LOK 2.8 inch rail created by Painter, allows installation of additional equipment on the handguards equipped with an M-LOK interface."
         }
+    },
+    "addToThisItemsFilters": {
+      "mod_foregrip": [
+          "CCG_BCM_MOD_REVERSED",
+          "CCG_BCM_MOD_REVERSED_TAPE",
+          "CCG_VERT_GRIP_2",
+          "CCG_VERT_GRIP_2_BLK"
+      ]
     }
   },
   "CCG_SILENCER_2_MULTI": {
@@ -4507,11 +4645,11 @@
         }
     }
   },
-  "CCG_MP7_MAGAZINE_1": {
+  "668aaa9fac3f1c58dff803ac": {
     "enable": true,
     "clone": "5ba26586d4351e44f824b340",
     "item": {
-        "_id": "CCG_MP7_MAGAZINE_1",
+        "_id": "668aaa9fac3f1c58dff803ac",
         "_name": "CCG_MP7_MAGAZINE_1",
         "_props": {
           "Name": "",
@@ -4526,8 +4664,8 @@
           "Cartridges": [
             {
               "_name": "cartridges",
-              "_id": "CCG_MP7_MAGAZINE_1_cartridges",
-              "_parent": "CCG_MP7_MAGAZINE_1",
+              "_id": "668aaab5793a1749dc0c7701",
+              "_parent": "668aaa9fac3f1c58dff803ac",
               "_max_count": 60,
               "_props": {
                 "filters": [
@@ -4621,6 +4759,266 @@
             "ShortName": "CGPC3",
             "Description": "A low-profile, lightweight and fully modular plate carrier made in the Czech Republic. With its sturdy construction and advanced materials, it offers reliable defense against ballistic threats and fragmentation, while its Tube Quick System allows for comfortable and silent unfastening."
         }
+    }
+  },
+  "CCG_VEST_CGPC_BLK": {
+    "enable": true,
+    "clone": "544a5caa4bdc2d1a388b4568",
+    "item": {
+        "_id": "CCG_VEST_CGPC_BLK",
+        "_name": "CCG_VEST_CGPC_BLK",
+        "_props": {
+          "Name": "",
+          "ShortName": "",
+          "Description": "",
+          "Width": 3,
+          "Height": 4,
+          "Prefab": {
+            "path": "assaultvest6_blk.bundle",
+            "rcid": ""
+          },
+          "CanSellOnRagfair": false,
+          "CanRequireOnRagfair": false
+        }
+    },
+    "handbook": {
+        "ParentId": "5b5f6f8786f77447ed563642",
+        "Price": 229000
+    },
+    "locales": {
+        "en": {
+            "Name": "CGPC3 TQS (Urban)",
+            "ShortName": "CGPC3",
+            "Description": "A low-profile, lightweight and fully modular plate carrier made in the Czech Republic. With its sturdy construction and advanced materials, it offers reliable defense against ballistic threats and fragmentation, while its Tube Quick System allows for comfortable and silent unfastening."
+        }
+    }
+  },
+  "6695008f0e58c72c3a50b67f": {
+    "enable": true,
+    "clone": "54527ac44bdc2d36668b4567",
+    "item": {
+        "_id": "6695008f0e58c72c3a50b67f",
+        "_name": "6695008f0e58c72c3a50b67f",
+        "_props": {
+          "Name": "",
+          "ShortName": "",
+          "Description": "",
+          "Prefab": {
+            "path": "patron_6mm_arc.bundle",
+            "rcid": ""
+          },
+          "StackMaxSize": 90,
+          "CanSellOnRagfair": false,
+          "CanRequireOnRagfair": false,
+          "InitialSpeed": 965,
+          "BallisticCoeficient": 0.288,
+          "BulletMassGram": 6,
+          "BulletDiameterMilimeters": 6,
+          "Damage": 55,
+          "ammoAccr": 10,
+          "ammoRec": 14,
+          "PenetrationPower": 43,
+          "MisfireChance": 0.01,
+          "PenetrationDamageMod": 0.175,
+          "PenetrationChanceObstacle": 0.45,
+          "RicochetChance": 0.3,
+          "FragmentationChance": 0.33,
+          "Deterioration": 1,
+          "SpeedRetardation": 2.3e-5,
+          "ArmorDamage": 54,
+          "MalfMisfireChance": 0.175,
+          "DurabilityBurnModificator": 1.6,
+          "HeatFactor": 1.97,
+          "MalfFeedChance": 0.094,
+          "Weight": 0.019
+        }
+    },
+    "handbook": {
+        "ParentId": "5b47574386f77428ca22b33b",
+        "Price": 1300
+    },
+    "locales": {
+        "en": {
+            "Name": "6x38mm ARC",
+            "ShortName": "ARC",
+            "Description": "The 6mm Advanced Rifle Cartridge (6x38mm), or 6mm ARC for short, is a 6 mm (.243) caliber intermediate rifle cartridge introduced by Hornady in 2020, as a low-recoil, high-accuracy long-range cartridge, designed for use in the AR-15 platform at request of a specialized group within the U.S. DoD for its multipurpose combat rifle program."
+        }
+    }
+  },
+  "CCG_BCM_MOD_REVERSED": {
+    "enable": true,
+    "clone": "5c7fc87d2e221644f31c0298",
+    "item": {
+        "_id": "CCG_BCM_MOD_REVERSED",
+        "_name": "CCG_BCM_MOD_REVERSED",
+        "_props": {
+          "Description": "",
+          "Name": "",
+          "ShortName": "",
+          "Prefab": {
+            "path": "bcm_mod_3_reversed.bundle",
+            "rcid": ""
+          }
+        }
+    },
+    "handbook": {
+        "ParentId": "5b5f71de86f774093f2ecf13",
+        "Price": 4900
+    },
+    "locales": {
+        "en": {
+            "Name": "BCM GUNFIGHTER MOD 3 vertical foregrip (reversed)",
+            "ShortName": "GF MOD3",
+            "Description": "Lightweight polymer tactical grip produced by BCM."
+        }
+    }
+  },
+  "CCG_BCM_MOD_REVERSED_TAPE": {
+    "enable": true,
+    "clone": "CCG_BCM_MOD_REVERSED",
+    "item": {
+        "_id": "CCG_BCM_MOD_REVERSED_TAPE",
+        "_name": "CCG_BCM_MOD_REVERSED_TAPE",
+        "_props": {
+          "Description": "",
+          "Name": "",
+          "ShortName": "",
+          "Recoil": -2,
+          "Ergonomics": 7,
+          "Prefab": {
+            "path": "bcm_mod_3_reversed_tape.bundle",
+            "rcid": ""
+          }
+        }
+    },
+    "handbook": {
+        "ParentId": "5b5f71de86f774093f2ecf13",
+        "Price": 4900
+    },
+    "locales": {
+        "en": {
+            "Name": "BCM GUNFIGHTER MOD 3 vertical foregrip (taped)",
+            "ShortName": "GF MOD3",
+            "Description": "Lightweight polymer tactical grip produced by BCM. Modded with grip tape that holds the universe together."
+        }
+    }
+  },
+  "CCG_BIPOD_HARRIS": {
+    "enable": true,
+    "item": {
+      "_id": "CCG_BIPOD_HARRIS",
+      "_name": "CCG_BIPOD_HARRIS",
+      "_parent": "55818afb4bdc2dde698b456d",
+      "_props": {
+        "Accuracy": 0,
+        "AnimationVariantsNumber": 0,
+        "BackgroundColor": "blue",
+        "BlocksCollapsible": false,
+        "BlocksFolding": false,
+        "CanPutIntoDuringTheRaid": true,
+        "CanRequireOnRagfair": false,
+        "CanSellOnRagfair": true,
+        "CantRemoveFromSlotsDuringRaid": [],
+        "ConflictingItems": [],
+        "CoolFactor": 1,
+        "Description": "",
+        "DiscardLimit": -1,
+        "DiscardingBlock": false,
+        "DoubleActionAccuracyPenaltyMult": 1,
+        "DropSoundType": "None",
+        "Durability": 100,
+        "DurabilityBurnModificator": 1,
+        "EffectiveDistance": 0,
+        "Ergonomics": -3,
+        "ExamineExperience": 10,
+        "ExamineTime": 1,
+        "ExaminedByDefault": true,
+        "ExtraSizeDown": 0,
+        "ExtraSizeForceAdd": false,
+        "ExtraSizeLeft": 0,
+        "ExtraSizeRight": 0,
+        "ExtraSizeUp": 0,
+        "Grids": [],
+        "HasShoulderContact": false,
+        "HeatFactor": 0.98,
+        "Height": 1,
+        "HideEntrails": false,
+        "InsuranceDisabled": false,
+        "IsAlwaysAvailableForInsurance": false,
+        "IsAnimated": false,
+        "IsLockedafterEquip": false,
+        "IsSpecialSlotOnly": false,
+        "IsUnbuyable": false,
+        "IsUndiscardable": false,
+        "IsUngivable": false,
+        "IsUnremovable": false,
+        "IsUnsaleable": false,
+        "ItemSound": "mod",
+        "LootExperience": 5,
+        "Loudness": 0,
+        "MergesWithChildren": true,
+        "Name": "",
+        "NotShownInSlot": false,
+        "Prefab": {
+          "path": "bipod_harris.bundle",
+          "rcid": ""
+        },
+        "QuestItem": false,
+        "QuestStashMaxCount": 0,
+        "RagFairCommissionModifier": 1,
+        "RaidModdable": true,
+        "Recoil": -4,
+        "RepairCost": 0,
+        "RepairSpeed": 0,
+        "ShiftsAimCamera": 0,
+        "ShortName": "",
+        "SightingRange": 0,
+        "Slots": [],
+        "StackMaxSize": 1,
+        "StackObjectsCount": 1,
+        "ToolModdable": true,
+        "Unlootable": false,
+        "UnlootableFromSide": [],
+        "UnlootableFromSlot": "FirstPrimaryWeapon",
+        "UsePrefab": {
+          "path": "",
+          "rcid": ""
+        },
+        "Velocity": 0,
+        "Weight": 0.39,
+        "Width": 1
+      },
+      "_proto": "56ea8222d2720b69698b4567",
+      "_type": "Item"
+    },
+    "handbook": {
+        "ParentId": "5b5f71c186f77409407a7ec0",
+        "Price": 10200
+    },
+    "locales": {
+        "en": {
+            "Name": "Harris TGC Bipod",
+            "ShortName": "Harris TGC",
+            "Description": "The Harris HBR ultralight foldable bipod with a spring retraction mechanism. Used by service operators and civilian shooters worldwide. Only for cosmetic purposes right now."
+        }
+    },
+    "addToExistingItemFilters": {
+      "mod_tactical_003": [
+        "CCG_ZIPLINE_AR15_HANDGUARD",
+        "CCG_M16_HANDGUARD",
+        "CCG_M16_HANDGUARD_BLK",
+        "637f57c532b66e7e320a6676",
+        "637f57d2f5ef8c33840d36c4",
+        "638f2003bbd47aeb9e0ff637",
+        "5d00ef6dd7ad1a0940739b16",
+        "5ab372a310e891001717f0d8",
+        "5addc7005acfc4001669f275"
+      ],
+      "mod_tactical": [
+        "5bfeb32b0db834001a6694d9",
+        "5b7be47f5acfc400170e2dd2",
+        "5addbf175acfc408fb13965b"
+      ]
     }
   }
 }

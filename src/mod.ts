@@ -1,20 +1,21 @@
-import { DependencyContainer }      from "tsyringe";
-import { IPostDBLoadMod }           from "@spt-aki/models/external/IPostDBLoadMod";
-import { DatabaseServer }           from "@spt-aki/servers/DatabaseServer";
-import { ImporterUtil }             from "@spt-aki/utils/ImporterUtil";
-import { ILogger }                  from "@spt-aki/models/spt/utils/ILogger";
-import { PreAkiModLoader }          from "@spt-aki/loaders/PreAkiModLoader";
-import { IDatabaseTables }          from "@spt-aki/models/spt/server/IDatabaseTables";
-import { JsonUtil }                 from "@spt-aki/utils/JsonUtil"
-import { ITemplateItem, Slot }      from "@spt-aki/models/eft/common/tables/ITemplateItem";
-import { ICustomizationItem }       from "@spt-aki/models/eft/common/tables/ICustomizationItem";
-import { ImodTGCDatabase }           from "@spt-aki/modTGC/ImodTGCDatabase";
-import { ImodTGCItem, ImodTGCLocale } from "@spt-aki/modTGC/ImodTGCItem";
-import { ImodTGCCustomizationItem }  from "@spt-aki/modTGC/ImodTGCCustomizationItem";
+import { DependencyContainer } from "tsyringe";
+import { IPostDBLoadMod } from "@spt/models/external/IPostDBLoadMod";
+import { DatabaseServer } from "@spt/servers/DatabaseServer";
+import { ImporterUtil } from "@spt/utils/ImporterUtil";
+import { ILogger } from "@spt/models/spt/utils/ILogger";
+import { PreSptModLoader } from "@spt/loaders/PreSptModLoader";
+import { IDatabaseTables } from "@spt/models/spt/server/IDatabaseTables";
+import { JsonUtil } from "@spt/utils/JsonUtil"
+import { ITemplateItem, Slot } from "@spt/models/eft/common/tables/ITemplateItem";
+import { ICustomizationItem } from "@spt/models/eft/common/tables/ICustomizationItem";
+import { ImodTGCDatabase } from "@spt/modTGC/ImodTGCDatabase";
+import { ImodTGCItem, ImodTGCLocale } from "@spt/modTGC/ImodTGCItem";
+import { ImodTGCCustomizationItem } from "@spt/modTGC/ImodTGCCustomizationItem";
 
 
 //Item template file
-import itemTemplate =       require("../templates/item_template.json");
+import itemTemplate = require("../templates/item_template.json");
+import configJson = require("../config.json");
 
 
 class TGCItems implements IPostDBLoadMod
@@ -31,7 +32,7 @@ class TGCItems implements IPostDBLoadMod
 
         const databaseServer =      container.resolve<DatabaseServer>("DatabaseServer");
         const databaseImporter =    container.resolve<ImporterUtil>("ImporterUtil");
-        const modLoader =           container.resolve<PreAkiModLoader>("PreAkiModLoader");
+        const modLoader =           container.resolve<PreSptModLoader>("PreSptModLoader");
 
         //Mod Info
         const modFolderName =   "MoxoPixel-TacticalGearComponent";
@@ -39,7 +40,7 @@ class TGCItems implements IPostDBLoadMod
 
         //Trader IDs
         const traders = {
-            "PAINTERSHOP":     "PAINTERSHOP"
+            "PAINTERSHOP":     "668aaff35fd574b6dcc4a686"
         };
 
         //Currency IDs
@@ -55,6 +56,18 @@ class TGCItems implements IPostDBLoadMod
 
         this.logger.info("Loading: " + modFullName);
 
+        const secureContainerIds = [
+            "665ee77ccf2d642e98220bca",
+            "5857a8bc2459772bad15db29",
+            "64f6f4c5911bcdfe8b03b0dc",
+            "544a11ac4bdc2d470e8b456a",
+            "5857a8b324597729ab0a0e7d",
+            "59db794186f77448bc595262",
+            "664a55d84a90fc2c8a6305c9",
+            "5c093ca986f7740a1867ab12"
+        ];
+        const armbandId = "55d7217a4bdc2d86028b456d";
+
         //Items
         for (const [modTGCID, modTGCItem] of Object.entries(this.mydb.modTGC_items))
         {
@@ -63,8 +76,17 @@ class TGCItems implements IPostDBLoadMod
             {
                 this.cloneItem(modTGCItem.clone, modTGCID);
                 this.copyToFilters(modTGCItem.clone, modTGCID);
-                if ( "PutInArmband" in modTGCItem) {
-                    this.db.templates.items["55d7217a4bdc2d86028b456d"]._props.Slots[14]._props.filters[0].Filter.push(modTGCID);
+
+
+                if ("PutInArmband" in modTGCItem && this.db.templates.items[armbandId]) {
+                    this.db.templates.items[armbandId]._props.Slots[14]._props.filters[0].Filter.push(modTGCID);
+                }
+                if (configJson.PouchesInSecureContainer && "putInSecureContainer" in modTGCItem) {
+                    for (const id of secureContainerIds) {
+                        if (this.db.templates.items[id]) { // Check if the item exists
+                            this.db.templates.items[id]._props.Grids[0]._props.filters[0].Filter.push(modTGCID);
+                        }
+                    }
                 }
             }
             else this.createItem(modTGCID);
@@ -102,7 +124,7 @@ class TGCItems implements IPostDBLoadMod
         //Mastery
         const dbMastering = this.db.globals.config.Mastering
         for (const weapon in this.mydb.globals.config.Mastering) dbMastering.push(this.mydb.globals.config.Mastering[weapon]);
-        for (const weapon in dbMastering) 
+        for (const weapon in dbMastering)
         {
         }
     }

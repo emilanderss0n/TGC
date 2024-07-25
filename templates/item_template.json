@@ -374,6 +374,7 @@
         "IsBeltMachineGun": "boolean",
         "MagazineWithBelt": "boolean",
         "BeltMagazineRefreshCount": "number",
-        "IsMagazineForStationaryWeapon": "boolean"
+        "IsMagazineForStationaryWeapon": "boolean",
+        "ReverbVolume": "number"
     }
 }
