@@ -1,78 +1,102 @@
 [
-    {
-        "_id": "tgc_black_combatshirt_top",
-        "tid": "PAINTERSHOP",
-        "suiteId": "tgc_black_combatshirt_suit",
-        "isActive": true,
-        "requirements": {
-            "loyaltyLevel": 1,
-            "profileLevel": 0,
-            "standing": 0,
-            "skillRequirements": [],
-            "questRequirements": [],
-            "itemRequirements": [
-                {
-                    "count": 120000,
-                    "_tpl": "5449016a4bdc2d6f028b456f"
-                }
-            ]
+  {
+    "_id": "672e29baefc06f082515e026",
+    "tid": "668aaff35fd574b6dcc4a686",
+    "suiteId": "672e2a6adbc2170974b85015",
+    "isActive": true,
+    "isHiddenInPVE": false,
+    "externalObtain": false,
+    "internalObtain": true,
+    "requirements": {
+      "loyaltyLevel": 1,
+      "profileLevel": 0,
+      "standing": 0,
+      "skillRequirements": [],
+      "questRequirements": [],
+      "achievementRequirements": [],
+      "itemRequirements": [
+        {
+          "count": 120000,
+          "_tpl": "5449016a4bdc2d6f028b456f",
+          "onlyFunctional": true
         }
-    },
-    {
-        "_id": "tgc_top_usec_hoody",
-        "tid": "PAINTERSHOP",
-        "suiteId": "tgc_hoody_suit",
-        "isActive": true,
-        "requirements": {
-            "loyaltyLevel": 1,
-            "profileLevel": 0,
-            "standing": 0,
-            "skillRequirements": [],
-            "questRequirements": [],
-            "itemRequirements": [
-                {
-                    "count": 220000,
-                    "_tpl": "5449016a4bdc2d6f028b456f"
-                }
-            ]
-        }
-    },
-    {
-        "_id": "tgc_m90_lower",
-        "tid": "PAINTERSHOP",
-        "suiteId": "tgc_m90_lower_suit",
-        "isActive": true,
-        "requirements": {
-            "loyaltyLevel": 2,
-            "profileLevel": 10,
-            "standing": 0,
-            "skillRequirements": [],
-            "questRequirements": [],
-            "itemRequirements": [
-                {
-                    "count": 99400,
-                    "_tpl": "5449016a4bdc2d6f028b456f"
-                }
-            ]
-        }
-    },
-    {
-        "_id": "tgc_m90_top",
-        "tid": "PAINTERSHOP",
-        "suiteId": "tgc_m90_top_suit",
-        "isActive": true,
-        "requirements": {
-            "loyaltyLevel": 2,
-            "profileLevel": 10,
-            "standing": 0,
-            "skillRequirements": [],
-            "questRequirements": [],
-            "itemRequirements": [
-                {
-                    "count": 120000,
-                    "_tpl": "5449016a4bdc2d6f028b456f"
-                }
-            ]
-        }
+      ],
+      "requiredTid": "668aaff35fd574b6dcc4a686"
     }
+  },
+  {
+    "_id": "672e2a1ab7a491bbacdaee50",
+    "tid": "668aaff35fd574b6dcc4a686",
+    "suiteId": "672e2a80fa694e66f620d70b",
+    "isActive": true,
+    "isHiddenInPVE": false,
+    "externalObtain": false,
+    "internalObtain": true,
+    "requirements": {
+      "loyaltyLevel": 1,
+      "profileLevel": 0,
+      "standing": 0,
+      "skillRequirements": [],
+      "questRequirements": [],
+      "achievementRequirements": [],
+      "itemRequirements": [
+        {
+          "count": 220000,
+          "_tpl": "5449016a4bdc2d6f028b456f",
+          "onlyFunctional": true
+        }
+      ],
+      "requiredTid": "668aaff35fd574b6dcc4a686"
+    }
+  },
+  {
+    "_id": "672e2a386ba7565ecbce1c7c",
+    "tid": "668aaff35fd574b6dcc4a686",
+    "suiteId": "672e2a95f4fd3c14dd6a552b",
+    "isActive": true,
+    "isHiddenInPVE": false,
+    "externalObtain": false,
+    "internalObtain": true,
+    "requirements": {
+      "loyaltyLevel": 2,
+      "profileLevel": 10,
+      "standing": 0,
+      "skillRequirements": [],
+      "questRequirements": [],
+      "achievementRequirements": [],
+      "itemRequirements": [
+        {
+          "count": 99400,
+          "_tpl": "5449016a4bdc2d6f028b456f",
+          "onlyFunctional": true
+        }
+      ],
+      "requiredTid": "668aaff35fd574b6dcc4a686"
+    }
+  },
+  {
+    "_id": "672e2aacf5f5543eb4cf3eae",
+    "tid": "668aaff35fd574b6dcc4a686",
+    "suiteId": "672e2afb3677b2081f2d767f",
+    "isActive": true,
+    "isHiddenInPVE": false,
+    "externalObtain": false,
+    "internalObtain": true,
+    "requirements": {
+      "loyaltyLevel": 2,
+      "profileLevel": 10,
+      "standing": 0,
+      "skillRequirements": [],
+      "questRequirements": [],
+      "achievementRequirements": [],
+      "itemRequirements": [
+        {
+          "count": 120000,
+          "_tpl": "5449016a4bdc2d6f028b456f",
+          "onlyFunctional": true
+        }
+      ],
+      "requiredTid": "668aaff35fd574b6dcc4a686"
+    }
+  }
 ]
