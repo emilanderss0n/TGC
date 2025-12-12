@@ -1,0 +1,4 @@
+{
+    "//": "IF YOU USE SVM TO SET remove secure container filters AND GET FILTER ERROR IN SERVER CONSOLE, YOU SHOULD SET PouchesInSecureContainer TO false",
+    "PouchesInSecureContainer": true
+}
